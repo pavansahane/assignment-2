@@ -1,0 +1,686 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+.navigation a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+#nav-icon1 span{
+    display: none;
+}
+.header{
+    background: url(./images/background-1.png);
+  width: 100%;
+  height: 898px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+ @font-face{
+     font-family: 'kontanter';
+     src: url(./fonts/kontanter/Kontanter-Bold.otf);
+     font-display: swap;
+ }
+
+ .logo h2{
+     font-family: Kontanter;
+     color:#00AEEF;
+     padding-top: 54px;
+     font-size: 35px;
+ }
+
+ .logo h2 span{
+     color: #8565bb;
+ }
+
+ .nav{
+     display: flex;
+     justify-content: space-between;
+     width: 80%;
+     margin: 0 auto;
+ }
+
+ .navigation ul{
+     display: flex;
+ }
+
+ .navigation li{
+padding: 60px 30px 0 30px;
+font-family: 'Roboto';
+font-size: 18px;
+}
+
+ .navigation li:hover{
+    font-weight: 700;
+ }
+ .head{
+     margin: 192px auto 0 auto;
+text-align: center; 
+}
+.head h1{
+    color: white;
+    font-size: 65px;
+    font-family: 'Lato';
+}
+.head h4{
+    color: white;
+    font-size: 33px;
+    font-family: 'Lato'; 
+    font-weight: unset ;
+    margin-top: 14px;
+}
+.head button{
+    margin-top: 83px;
+    width: 181px;
+    height: 51px;
+    border-radius: 30px;
+    border: 1px solid #FFFFFF;
+    background: unset;
+    color:#FFFFFF;
+}
+
+
+.img-2 img{
+    filter:grayscale(100%);
+    
+}
+ .do{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 85%;
+     margin: 83px auto 90px 15%;
+ }
+
+ .colm-1{
+    display: flex;
+    margin: 51px auto 0 15%;
+    
+}
+
+ .do-1{
+     color: #E1E1E1;
+     font-size: 92px;
+     width: 24%;
+     font-family: 'lato';   
+     margin-left: 5%;
+
+ }
+
+ .para-1{
+     margin-left: 51px;
+ }
+ .para-1 h3{
+     margin-bottom: 30px;
+     color: #333333;
+     font-family: 'lato';
+     font-size: 20px;
+ }
+
+ .para-1 p{
+width: 48%;
+font-size: 14px;
+font-family: 'lato';
+font-weight: 500;
+color: #333333;
+ }
+
+ .colm{
+     margin-left: 10%;
+ }
+
+ .customer-srv{
+     background: url(./images/service.png);
+     height: 886px;
+     background-size: 100%;
+     background-repeat: no-repeat;
+     width: 100%;
+     background-image:linear-gradient(  to right, rgba(247,247,247,1) 25%, rgba(247,247,247,0) ), url(./images/service.png);
+ }
+ .written {
+     padding-top: 18%;
+     margin-left: 8%;
+ }
+
+ .written h2{
+     font-size: 50px;
+     font-family: 'lato';
+     color: #503392;
+     font-weight: 500;
+ }
+
+ .written p{
+     color: #333333;
+     font-family: 'lato';
+     font-size: 18px;
+     width: 28%;
+     font-weight: 500;
+     margin-top: 44px;
+     margin-bottom: 40px;
+     
+ }
+
+ .written button{
+     background: #503392;
+     width: 261px;
+     height: 57px;
+     border: none;
+     font-size: 18px;
+     color: #F3F2F2;
+     font-family: 'lato';
+ }
+
+.our-port{
+    margin-top: 137px;
+    text-align: center;
+}
+.our-port h2{
+    color: #333333;
+    font-size: 50px;
+    font-family: 'lato';
+}
+.our-port p{
+    color: #333333;
+    font-family: 'lato';
+    font-size: 18px;
+    margin-top:25px;
+}
+.btn input{
+    margin-top: 54px;
+    text-align: center;
+    cursor: pointer;
+    height: 45px;
+    width: 127px;
+    font-size: 15px;
+    font-family: 'lato';
+    border: 2px solid #333333;
+    color: #332828;
+    background: transparent;
+    margin-bottom: 10px;
+    margin-left: 5px;
+
+
+}
+
+.btn input:focus{
+    background: #4E3391;
+    color: #FFFFFF;
+    border:2px solid transparent ;
+}
+
+
+.pics{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+ 
+}
+.gallery-1{
+    display: flex;
+    margin: 58px auto 0 auto;  
+    flex-wrap: wrap;
+}
+.gallery-2{
+    display: flex;
+    margin: 0 auto 121px auto;
+    flex-wrap: wrap;
+}
+.hover img{
+    margin: 3px 5px;
+}
+
+.hover{
+    position: relative;
+}
+.img2{
+    position: absolute;
+    left: 33px;
+    top: 39px;
+display: none;
+}
+.hover .fa-search-plus {
+    position: absolute;
+    left: 117px;
+    top: 155px;
+    color: #FFFFFF;
+    border: 3px solid #FFFFFF;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    padding-top: 2px;
+    display: none;
+
+}
+
+.hover .fa-heart-o {
+    position: absolute;
+    left: 150px;
+    top: 155px;
+    color: #FFFFFF;
+    font-size: 14px;
+    background: #ED145B;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    padding-top: 6px;
+    display: none;
+
+}
+
+.hover:hover img.img2{
+    display: block;
+}
+.hover:hover i{
+    display: block;
+}
+
+.btn{
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+    margin: 0 auto;
+}
+
+.numeric{
+    background-image: linear-gradient(rgba(79, 51, 146, 1),rgba(79, 51, 146, 0.8)), url(./images/background-2.png);
+    height: 384px;
+    margin-top: 122px;
+}
+.numeric-flex{
+    display: flex;
+    justify-content: space-around;
+   padding-top: 123px;
+   width: 70%;
+   text-align: center;
+   color: #FEFEFE;
+   font-family: 'Lato';
+   margin: 0 auto;
+}
+
+.numeric-flex h2{
+    font-size: 35px;
+    margin-top: 20px;
+}
+.numeric-flex p{
+    font-size: 20px;
+    margin-top: 9px;
+}
+.contact{
+    background: #232323;
+    width: 100%;
+    height: 760px;
+}
+.cont{
+    text-align: center;
+}
+.cont h2{
+    font-size: 50px;
+    font-family: 'lato';
+    color: #FFFFFF;
+    padding-top: 93px;
+}
+.cont p{
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: 'Lato';
+    padding-top: 25px;
+}
+.contact h4{
+    font-size: 33px;
+    color: #FFFFFF;
+    font-family: 'Lato';
+    font-weight: 400;
+    padding-bottom: 42px;
+
+}
+::placeholder{
+    font-size: 12px;
+    padding-left: 10px;
+}
+input[type=text]{
+    color: #FFFFFF;
+}
+input[type=email]{
+    color: #FFFFFF;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    
+}
+input{
+    margin-top: 11px;
+    background: transparent;
+    border: 1px solid #FFFFFF;
+}
+.text{
+    color: #FFFFFF;
+}
+.leave-msg{
+    margin-top: 86px;
+}
+.leave-msg button{
+    background: #4E3391;
+    border: 1px solid #FFFFFF;
+    font-size:12px;
+    font-family: 'Lato';
+    color: #FFFFFF;
+    width: 120px;
+    height: 30px;
+    margin-top: 11px;
+}
+.adrs{
+    display: flex;
+    margin-bottom: 40px;
+    
+
+}
+.contact-flex{
+    display: flex;
+    justify-content: space-around;
+}
+.address{
+    margin-top: 166px;
+    color: #FFFFFF;
+    font-family: 'Lato';
+}
+.adrs p{
+    font-size: 16px;
+    margin-left: 35px;
+}
+.adrs-1{
+    width: 75%;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    background: #1F1F1F;
+    width: 100%;
+    height: 90px;
+    padding-top: 40px;
+    font-size: 16px;
+    padding-right: 10px;
+    font-family: 'Lato';
+    color: #555555;
+    font-weight: 400;
+}
+.social-media img{
+   margin: 0 10px;
+
+}
+footer h4{
+    margin-right: 183px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @media screen and (max-width:1200px){
+
+    .head h1{
+        font-size: 55px;
+    }
+        
+    .para-1 p{
+        width: 100%;
+    }
+    .do{
+        margin-left: 7%;
+    }
+    .colm{
+        margin-left: 24%;
+    }
+    
+
+ }
+  
+
+
+
+
+
+@media screen and (max-width:800px){
+
+    #yourID{
+        display: none;
+    }
+    .navbar{
+        position: absolute;
+    width: 120px;
+    /* margin-left: -10px; */
+    background-color: transparent;
+    }
+    
+    #nav-icon1 span{
+        display: block;
+        margin:4px 12px 4px auto;
+        height: 4px;
+        width:40px;
+        background: #fff;
+        border-radius: 9px;
+    }
+.navigation{
+    margin-top: 50px;
+}
+
+.header{
+    height: 530px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.logo h2{
+    font-size: 20px;
+}
+
+.nav{
+    width: 85%;
+}
+
+.navigation ul{
+    flex-direction: column;
+  
+}
+.navigation li{
+    padding-top: 10px;
+    font-size: 14px;
+    padding-left: unset;
+    padding-right: unset;
+}
+.head h1{
+    font-size: 30px;
+    padding-top: 45px;
+}
+.head h4{
+    font-size: 15px;
+}
+.head{
+    margin-top: 100px;
+}
+.head button{
+    margin-top: 20px;
+    width: 143px;
+    height: 40px;
+    border-radius: 20px;
+}
+.do{
+    flex-direction: column;
+margin: 10% auto 0 auto;
+}
+.do-1{
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+}
+.colm-1{
+      margin: 51px auto 0 auto;
+}
+.para-1 p{
+    font-size: 12px;
+    width: 99%;
+}
+.para-1 h3{
+    font-size:15px;
+    margin-bottom: 10px;
+
+}
+.customer-srv{
+    background: url(./images/service.png);
+    height: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position-x: 80%;
+    background-image:linear-gradient(  to right, rgba(247,247,247,1) 50%, rgba(247,247,247,0) ), url(./images/service.png);
+}
+.written{
+    margin-top: 50px;
+    margin-left: 25px;
+}
+.written h2{
+    font-size: 30px;
+}
+.written p{
+    font-size: 12px;
+    width: 50%;
+}
+.written button{
+    width: 195px;
+    height: 35px;
+    font-size: 15px;
+    margin-bottom: 18%;
+}
+.our-port{
+    margin-top: 10%;
+
+}
+.our-port h2{
+    font-size: 30px ;
+}
+.our-port p{
+    font-size: 12px;
+    width: 80%;
+    margin: 4% auto 0 auto;
+}
+.button button{
+    font-size: 12px;
+    height: 30px;
+}
+
+.hover img{
+    width: 139px;
+    height: 156px;
+}
+.gallery-1{
+justify-content: center;
+}
+.gallery-2{
+    justify-content: center;
+}
+
+.btn input{
+    height: 30px;
+        width: 120px;
+        font-size: 12px;
+        margin: 54px 3px 10px 3px;
+        padding: 5px;
+}
+.btn{
+    width: 80%;
+    
+}
+.numeric{
+    margin-top: 20px;
+    height: 845px;
+
+}
+.numeric-flex{
+    flex-direction: column;
+    padding-top: 30px;
+
+}
+.num{
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.contact-flex{
+    flex-direction: column;
+}
+.leave-msg input{
+width: 70%;
+}
+.leave-msg{
+    margin: 40px auto 0 auto;
+}
+.cont p{
+    font-size: 12px;
+    width: 80%;
+    margin: 0 auto;
+}
+.cont h2{
+    font-size: 30px;
+}
+.contact h4{
+    font-size: 23px;
+}
+.address{
+margin:40px auto 0 39px ;
+}
+.contact{
+    height: 960px;
+}
+.address p{
+    font-size: 12px;
+}
+.social-media img {
+    margin: 0px 3px;
+    width: 12px;
+    height: 16px;
+}
+footer h4{
+    font-size: 12px;
+    margin-right: unset;
+}
+
+
+   }
+
+

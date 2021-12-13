@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazing Island</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Merriweather:wght@300&family=Montserrat:wght@200;300&family=Oswald:wght@600;700&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,400&family=Merriweather:wght@300&family=Montserrat:wght@200;300&family=Oswald:wght@600;700&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="./script.js"></script>
+   
+
+
+</head>
+
+<body>
+
+    <section class="header">
+        <div class="nav">
+            <div class="logo">
+                <h2>Ama<span>zing</span></h2>
+            </div>
+            <div class="navigation">
+                <nav>
+                    <label id="nav-icon1" class="butn" for="nav-menu1" onclick=" menudis()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <ul id="yourID" class="navbar menu">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="">SERVICE</a></li>
+                        <li><a href="">PORTFOLIO</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="head">
+            <h1>Have an amazing business meeting</h1>
+            <h4>Small business with big dreams</h4>
+            <button>Learn more</button>
+        </div>
+    </section>
+
+    <section class="do">
+        <div class="do-1">
+            <h2>WHAT WE DO</h2>
+        </div>
+        <div class="colm">
+            <div class="colm-1">
+                <div class="img-1">
+                    <img src="./images/web-ds.png" alt="">
+                </div>
+                <div class="para-1">
+                    <h3>Web Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+                </div>
+            </div>
+            <div class="colm-1">
+                <div class="img-2">
+                    <img src="./images/Ux.png" alt="">
+                </div>
+                <div class="para-1">
+                    <h3>UI/UX Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+                </div>
+            </div>
+            <div class="colm-1">
+                <div class="img-3">
+                    <img src="./images/photo.png" alt="">
+                </div>
+                <div class="para-1">
+                    <h3>Photography</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+                </div>
+            </div>
+            <div class="colm-1">
+                <div class="img-4">
+                    <img src="./images/app-dev.png" alt="">
+                </div>
+                <div class="para-1" style="margin-left: 60px;">
+                    <h3>App Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="customer-srv">
+        <div class="written">
+            <h2>Exceptional Customer Service</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor Lorem ipsum dolor sit amet
+                consectetur adipiscing elit.</p>
+            <button>Need to help? lets Chat &#x2192</button>
+        </div>
+    </section>
+    <section class="portfolio">
+        <div class="our-port">
+            <h2>Our Portfolio</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+        </div>
+    </section>
+
+
+    <section class="grid">
+        <div class="btn">
+            <input class="button" type="button" name="answer" value="All" onclick="showDiv()" />
+
+            <input class="button-2" type="button" name="answer" value="Web" onclick="showDiv2()" />
+
+            <input class="button-3" type="button" name="answer" value="UI/UX" onclick="showDiv3()" />
+
+            <input class="button-4" type="button" name="answer" value="Photography" onclick="showDiv4()" />
+
+            <input class="button-5" type="button" name="answer" value="Branding" onclick="showDiv5()" />
+
+        </div>
+
+        <div id="welcomeDiv" style="display:none;" class="answer_list">
+
+            <div id="pics" class="pics">
+                <div class="gallery-1">
+                    <div class="hover">
+                        <img class="img1" src="./images/pic-1.png" alt="">
+                        <img class="img2" src="./images/border.png" alt="">
+                        <i style="font-size: 14px;" class="fa fa-search-plus"></i>
+                        <i class="fa fa-heart-o"></i>
+
+
+                    </div>
+                    <div class="hover">
+                        <img class="img1" src="./images/pic-2.png" alt="">
+                        <img class="img2" src="./images/border.png" alt="">
+                        <i style="font-size: 14px;" class="fa fa-search-plus"></i>
+                        <i class="fa fa-heart-o"></i>
+
+
+                    </div>
+                    <div class="hover">
+                        <img class="img1" src="./images/pic-3.png" alt="">
+                        <img class="img2" src="./images/border.png" alt="">
+                        <i style="font-size: 14px;" class="fa fa-search-plus"></i>
+                        <i class="fa fa-heart-o"></i>
+
+
+                    </div>
+                    <div class="hover">
+                        <img class="img1" src="./images/pic4.png" alt="">
+                        <img class="img2" src="./images/border.png" alt="">
+                        <i style="font-size: 14px;" class="fa fa-search-plus"></i>
+                        <i class="fa fa-heart-o"></i>
+
+
+                    </div>
+                </div>
+
+
+                <div class="gallery-2">
+                    <div class="hover">
+                        <img class="img1" src="./images/pic-5.png" alt="">
+                        <img class="img2" src="./images/border.png" alt="">
+                        <i style="font-size: 14px;" class="fa fa-search-plus"></i>
+                        <i class="fa fa-heart-o"></i>
+
+
+                    </div>
+                    <div class="hover">
+                        <img class="img-1" src="./images/pic-6.png" alt="">
+                        <img class="img2" src="./images/border.png" alt="">
+                        <i style="font-size: 14px;" class="fa fa-search-plus"></i>
+                        <i class="fa fa-heart-o"></i>
+
+
+                    </div>
+                    <div class="hover">
+                        <img class="img1" src="./images/pic-7.png" alt="">
+                        <img class="img2" src="./images/border.png" alt="">
+                        <i style="font-size: 14px;" class="fa fa-search-plus"></i>
+                        <i class="fa fa-heart-o"></i>
+
+
+                    </div>
+                    <div class="hover">
+                        <img class="img1" src="./images/pic-8.png" alt="">
+                        <img class="img2" src="./images/border.png" alt="">
+                        <i style="font-size: 14px;" class="fa fa-search-plus"></i>
+                        <i class="fa fa-heart-o"></i>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="welcomeDiv-2" style="display:none;" class="answer_list">
+            <div id="pics" class="pics">
+                <div class="gallery-1">
+                    <div class="hover">
+                        <img class="img1" src="./images/pic-1.png" alt="">
+                        <img class="img2" src="./images/border.png" alt="">
+                        <i style="font-size: 14px;" class="fa fa-search-plus"></i>
+                        <i class="fa fa-heart-o"></i>
+
+
+                    </div>
+                    <div class="hover">
+                        <img class="img1" src="./images/pic-2.png" alt="">
+                        <img class="img2" src="./images/border.png" alt="">
+                        <i style="font-size: 14px;" class="fa fa-search-plus"></i>
+                        <i class="fa fa-heart-o"></i>
+
+
+                    </div>
+                    <div class="hover">
+                        <img class="img1" src="./images/pic-3.png" alt="">
+                        <img class="img2" src="./images/border.png" alt="">
+                        <i style="font-size: 14px;" class="fa fa-search-plus"></i>
+                        <i class="fa fa-heart-o"></i>
+
+
+                    </div>
+                    <div class="hover">
+                        <img class="img1" src="./images/pic4.png" alt="">
+                        <img class="img2" src="./images/border.png" alt="">
+                        <i style="font-size: 14px;" class="fa fa-search-plus"></i>
+                        <i class="fa fa-heart-o"></i>
+
+
+                    </div>
+                </div>
+
+
+                <div class="gallery-2">
+                    <div class="hover">
+                        <img class="img1" src="./images/pic-8.png" alt="">
+                        <img class="img2" src="./images/border.png" alt="">
+                        <i style="font-size: 14px;" class="fa fa-search-plus"></i>
+                        <i class="fa fa-heart-o"></i>
+
+
+                    </div>
+                    <div class="hover">
+                        <img class="img-1" src="./images/pic-7.png" alt="">
+                        <img class="img2" src="./images/border.png" alt="">
+                        <i style="font-size: 14px;" class="fa fa-search-plus"></i>
+                        <i class="fa fa-heart-o"></i>
+
+
+                    </div>
+                    <div class="hover">
+                        <img class="img1" src="./images/pic-6.png" alt="">
+                        <img class="img2" src="./images/border.png" alt="">
+                        <i style="font-size: 14px;" class="fa fa-search-plus"></i>
+                        <i class="fa fa-heart-o"></i>
+
+
+                    </div>
+                    <div class="hover">
+                        <img class="img1" src="./images/pic-5.png" alt="">
+                        <img class="img2" src="./images/border.png" alt="">
+                        <i style="font-size: 14px;" class="fa fa-search-plus"></i>
+                        <i class="fa fa-heart-o"></i>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div id="welcomeDiv-3" style="display:none;" class="answer_list">
+            <div id="pics" class="pics">
+                <div class="gallery-1">
+                    <div class="hover">
+                        <img class="img1" src="./images/pic4.png" alt="">
+                        <img class="img2" src="./images/border.png" alt="">
+                        <i style="font-size: 14px;" class="fa fa-search-plus"></i>
+                        <i class="fa fa-heart-o"></i>
+
+
+                    </div>
+                    <div class="hover">
+                        <img class="img1" src="./images/pic-3.png" alt="">
+                        <img class="img2" src="./images/border.png" alt="">
+                        <i style="font-size: 14px;" class="fa fa-search-plus"></i>
+                        <i class="fa fa-heart-o"></i>
+
+
+                    </div>
+                    <div class="hover">
+                        <img class="img1" src="./images/pic-2.png" alt="">
+                        <img class="img2" src="./images/border.png" alt="">
+                        <i style="font-size: 14px;" class="fa fa-search-plus"></i>
+                        <i class="fa fa-heart-o"></i>
+
+
+                    </div>
+                    <div class="hover">
+                        <img class="img1" src="./images/pic-1.png" alt="">
+                        <img class="img2" src="./images/border.png" alt="">
+                        <i style="font-size: 14px;" class="fa fa-search-plus"></i>
+                        <i class="fa fa-heart-o"></i>
+
+
+                    </div>
+                </div>
+
+
+                <div class="gallery-2">
+                    <div class="hover">
+                        <img class="img1" src="./images/pic-6.png" alt="">
+                        <img class="img2" src="./images/border.png" alt="">
+                        <i style="font-size: 14px;" class="fa fa-search-plus"></i>
+                        <i class="fa fa-heart-o"></i>
+
+
+                    </div>
+                    <div class="hover">
+                        <img class="img-1" src="./images/pic-8.png" alt="">
+                        <img class="img2" src="./images/border.png" alt="">
+                        <i style="font-size: 14px;" class="fa fa-search-plus"></i>
+                        <i class="fa fa-heart-o"></i>
+
+
+                    </div>
+                    <div class="hover">
+                        <img class="img1" src="./images/pic-7.png" alt="">
+                        <img class="img2" src="./images/border.png" alt="">
+                        <i style="font-size: 14px;" class="fa fa-search-plus"></i>
+                        <i class="fa fa-heart-o"></i>
+
+
+                    </div>
+                    <div class="hover">
+                        <img class="img1" src="./images/pic-8.png" alt="">
+                        <img class="img2" src="./images/border.png" alt="">
+                        <i style="font-size: 14px;" class="fa fa-search-plus"></i>
+                        <i class="fa fa-heart-o"></i>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div id="welcomeDiv-4" style="display:none;" class="answer_list">
+            <div id="pics" class="pics">
+                <div class="gallery-1">
+                    <div class="hover">
+                        <img class="img1" src="./images/pic-5.png" alt="">
+                        <img class="img2" src="./images/border.png" alt="">
+                        <i style="font-size: 14px;" class="fa fa-search-plus"></i>
+                        <i class="fa fa-heart-o"></i>
+
+
+                    </div>
+                    <div class="hover">
+                        <img class="img1" src="./images/pic-6.png" alt="">
+                        <img class="img2" src="./images/border.png" alt="">
+                        <i style="font-size: 14px;" class="fa fa-search-plus"></i>
+                        <i class="fa fa-heart-o"></i>
+
+
+                    </div>
+                    <div class="hover">
+                        <img class="img1" src="./images/pic-7.png" alt="">
+                        <img class="img2" src="./images/border.png" alt="">
+                        <i style="font-size: 14px;" class="fa fa-search-plus"></i>
+                        <i class="fa fa-heart-o"></i>
+
+
+                    </div>
+                    <div class="hover">
+                        <img class="img1" src="./images/pic-8.png" alt="">
+                        <img class="img2" src="./images/border.png" alt="">
+                        <i style="font-size: 14px;" class="fa fa-search-plus"></i>
+                        <i class="fa fa-heart-o"></i>
+
+
+                    </div>
+                </div>
+
+
+                <div class="gallery-2">
+                    <div class="hover">
+                        <img class="img1" src="./images/pic-1.png" alt="">
+                        <img class="img2" src="./images/border.png" alt="">
+                        <i style="font-size: 14px;" class="fa fa-search-plus"></i>
+                        <i class="fa fa-heart-o"></i>
+
+
+                    </div>
+                    <div class="hover">
+                        <img class="img-1" src="./images/pic-2.png" alt="">
+                        <img class="img2" src="./images/border.png" alt="">
+                        <i style="font-size: 14px;" class="fa fa-search-plus"></i>
+                        <i class="fa fa-heart-o"></i>
+
+
+                    </div>
+                    <div class="hover">
+                        <img class="img1" src="./images/pic-3.png" alt="">
+                        <img class="img2" src="./images/border.png" alt="">
+                        <i style="font-size: 14px;" class="fa fa-search-plus"></i>
+                        <i class="fa fa-heart-o"></i>
+
+
+                    </div>
+                    <div class="hover">
+                        <img class="img1" src="./images/pic4.png" alt="">
+                        <img class="img2" src="./images/border.png" alt="">
+                        <i style="font-size: 14px;" class="fa fa-search-plus"></i>
+                        <i class="fa fa-heart-o"></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="welcomeDiv-5" style="display:none;" class="answer_list">
+            <div id="pics" class="pics">
+                <div class="gallery-1">
+                    <div class="hover">
+                        <img class="img1" src="./images/pic4.png" alt="">
+                        <img class="img2" src="./images/border.png" alt="">
+                        <i style="font-size: 14px;" class="fa fa-search-plus"></i>
+                        <i class="fa fa-heart-o"></i>
+
+
+                    </div>
+                    <div class="hover">
+                        <img class="img1" src="./images/pic-1.png" alt="">
+                        <img class="img2" src="./images/border.png" alt="">
+                        <i style="font-size: 14px;" class="fa fa-search-plus"></i>
+                        <i class="fa fa-heart-o"></i>
+
+
+                    </div>
+                    <div class="hover">
+                        <img class="img1" src="./images/pic-3.png" alt="">
+                        <img class="img2" src="./images/border.png" alt="">
+                        <i style="font-size: 14px;" class="fa fa-search-plus"></i>
+                        <i class="fa fa-heart-o"></i>
+
+
+                    </div>
+                    <div class="hover">
+                        <img class="img1" src="./images/pic-2.png" alt="">
+                        <img class="img2" src="./images/border.png" alt="">
+                        <i style="font-size: 14px;" class="fa fa-search-plus"></i>
+                        <i class="fa fa-heart-o"></i>
+
+
+                    </div>
+                </div>
+
+
+                <div class="gallery-2">
+                    <div class="hover">
+                        <img class="img1" src="./images/pic-8.png" alt="">
+                        <img class="img2" src="./images/border.png" alt="">
+                        <i style="font-size: 14px;" class="fa fa-search-plus"></i>
+                        <i class="fa fa-heart-o"></i>
+
+
+                    </div>
+                    <div class="hover">
+                        <img class="img-1" src="./images/pic-7.png" alt="">
+                        <img class="img2" src="./images/border.png" alt="">
+                        <i style="font-size: 14px;" class="fa fa-search-plus"></i>
+                        <i class="fa fa-heart-o"></i>
+
+
+                    </div>
+                    <div class="hover">
+                        <img class="img1" src="./images/pic-6.png" alt="">
+                        <img class="img2" src="./images/border.png" alt="">
+                        <i style="font-size: 14px;" class="fa fa-search-plus"></i>
+                        <i class="fa fa-heart-o"></i>
+
+
+                    </div>
+                    <div class="hover">
+                        <img class="img1" src="./images/pic-5.png" alt="">
+                        <img class="img2" src="./images/border.png" alt="">
+                        <i style="font-size: 14px;" class="fa fa-search-plus"></i>
+                        <i class="fa fa-heart-o"></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="numeric">
+        <div class="numeric-flex">
+            <div class="num">
+                <img src="./images/client.png" alt="">
+                <h2>3,800+</h2>
+                <p>Satisfied Clients</p>
+            </div>
+
+            <div class="num">
+                <img src="./images/project.png" alt="">
+                <h2>4510+</h2>
+                <p>Projects Completed</p>
+            </div>
+
+            <div class="num">
+                <img src="./images/feedback.png" alt="">
+                <h2>2,800+</h2>
+                <p>Positive Feedbacks</p>
+            </div>
+
+            <div class="num">
+                <img src="./images/freebies.png" alt="">
+                <h2>5,500+</h2>
+                <p>Freebies Released</p>
+            </div>
+        </div>
+
+    </section>
+    <section class="contact">
+        <div class="cont">
+            <h2>Contact</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+        </div>
+        <div class="contact-flex">
+            <div class="leave-msg">
+                <h4>Leave A Message</h4>
+                <form action="text">
+                    <input style="height: 30px;" id="full-name" placeholder="Full Name" type="text">
+                    <input style="height: 30px;" id="email" placeholder="Email" type="email">
+                    <input style="height: 30px;" id="subject" placeholder="Subject" type="text">
+                    <input class="messege" style="height: 144px; padding-bottom: 100px;" placeholder="Message"
+                        type="text">
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            <div class="address">
+                <h4>Address</h4>
+                <div class="adrs">
+                    <i style="font-size:24px" class="fa">&#xf015;</i>
+                    <p class="adrs-1">69/A , Road 3, Mohammadia Housing Ltd
+                        Dhaka - 1207</p>
+                </div>
+                <div class="adrs">
+                    <i style="font-size:24px" class="fa">&#xf095;</i>
+                    <div class="adrs-2">
+                        <p>+880 1750727522</p>
+                        <p> +880 1630742521</p>
+                    </div>
+                </div>
+                <div class="adrs">
+                    <i style="font-size:24px" class="fa">&#xf003;</i>
+                    <p>muslimmahin@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="footer-flex">
+        <h4>All right Researved © Muslim Mahin 2016</h4>
+    </div>
+
+        <div class="social-media">
+            <img src="./images/facebook.png" alt="">
+            <img src="./images/twitter.png" alt="">
+            <img src="./images/google.png" alt="">
+            <img src="./images/instagram.png" alt="">
+            <img src="./images/behance.png" alt="">
+            <img src="./images/dribbble.png" alt="">
+        </div>
+    </footer>
+
+
+
+
+
+
+
+</body>
+
+</html>
