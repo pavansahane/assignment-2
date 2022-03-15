@@ -609,6 +609,20 @@ margin: 10% auto 0 auto;
     width: 139px;
     height: 156px;
 }
+.img2{
+    left: 0px;
+    top:0px;
+}
+.hover .fa-search-plus{
+    left:48px;
+    top:70px;
+}
+
+.hover .fa-heart-o {
+left:83px;
+top:70px;
+}
+
 .gallery-1{
 justify-content: center;
 }
